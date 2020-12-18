@@ -14,20 +14,21 @@ body{
     // background: url(../images/BG_1.png) no-repeat center top;
     // background-size: cover;
     background: $gradienteVerde;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat: no-repeat;    
 	font-family: 'Fira Sans', sans-serif;
     color:$colorTexto;
     font-size: 1.3rem;
     transform-style: preserve-3d;
+    height: 200vh; //testing height
 }
 // @media (max-width:768px){}
 .logo{
-    position: relative;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 10;
     .logoImg{
-        position: fixed;
-        top: 0;
         width: 25%;
     }
     @media (min-width:1600px){
@@ -51,7 +52,7 @@ body{
         padding-top: 20%;
         .decoArboles{
             position: absolute;
-            top: -30%;
+            top: -10%;
             right: 3%;
             width: 25%;
         }
@@ -98,8 +99,25 @@ body{
             }
         }
     }
-    @media (max-width:576px){
+    @media (max-width:768px){
         .cardContainer{
+            .decoArboles{
+                width: 35%;
+            }
+            .cardBox{
+                transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                -moz-transform: scale(0.8);
+                transform-origin: center left;
+            }
+        }
+    }
+    @media (max-width:576px){
+        max-height: 380px;
+        .cardContainer{
+            .decoArboles{
+                width: 45%;
+            }
             .cardBox{
                 transform: scale(0.4);
                 -webkit-transform: scale(0.4);
@@ -107,6 +125,15 @@ body{
                 transform-origin: center left;
             }
         }
+    }
+}
+.animContainer{
+    margin: auto;
+    max-width: 5rem;
+    padding-bottom: 5%;
+    padding-top: 3rem;    
+    @media (max-width:576px){
+        padding-top: 1rem;
     }
 }
 footer{

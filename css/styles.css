@@ -7,22 +7,23 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #d2ff5c), color-stop(60%, #82e778));
   background: linear-gradient(180deg, #d2ff5c 30%, #82e778 60%);
   background-repeat: no-repeat;
-  height: 100vh;
   font-family: 'Fira Sans', sans-serif;
   color: #444444;
   font-size: 1.3rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  height: 200vh;
 }
 
 .logo {
-  position: relative;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 10;
 }
 
 .logo .logoImg {
-  position: fixed;
-  top: 0;
   width: 25%;
 }
 
@@ -50,7 +51,7 @@ body {
 
 .cardNavidad .cardContainer .decoArboles {
   position: absolute;
-  top: -30%;
+  top: -10%;
   right: 3%;
   width: 25%;
 }
@@ -108,13 +109,45 @@ body {
   font-size: 6.5rem;
 }
 
+@media (max-width: 768px) {
+  .cardNavidad .cardContainer .decoArboles {
+    width: 35%;
+  }
+  .cardNavidad .cardContainer .cardBox {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+}
+
 @media (max-width: 576px) {
+  .cardNavidad {
+    max-height: 380px;
+  }
+  .cardNavidad .cardContainer .decoArboles {
+    width: 45%;
+  }
   .cardNavidad .cardContainer .cardBox {
     transform: scale(0.4);
     -webkit-transform: scale(0.4);
     -moz-transform: scale(0.4);
     -webkit-transform-origin: center left;
             transform-origin: center left;
+  }
+}
+
+.animContainer {
+  margin: auto;
+  max-width: 5rem;
+  padding-bottom: 5%;
+  padding-top: 3rem;
+}
+
+@media (max-width: 576px) {
+  .animContainer {
+    padding-top: 1rem;
   }
 }
 
