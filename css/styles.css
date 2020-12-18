@@ -1,0 +1,137 @@
+/*styles*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #d2ff5c), color-stop(60%, #82e778));
+  background: linear-gradient(180deg, #d2ff5c 30%, #82e778 60%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Fira Sans', sans-serif;
+  color: #444444;
+  font-size: 1.3rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.logo {
+  position: relative;
+  z-index: 10;
+}
+
+.logo .logoImg {
+  position: fixed;
+  top: 0;
+  width: 25%;
+}
+
+@media (min-width: 1600px) {
+  .logo .logoImg {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .logo .logoImg {
+    width: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo .logoImg {
+    width: 50%;
+  }
+}
+
+.cardNavidad .cardContainer {
+  padding-top: 20%;
+}
+
+.cardNavidad .cardContainer .decoArboles {
+  position: absolute;
+  top: -30%;
+  right: 3%;
+  width: 25%;
+}
+
+.cardNavidad .cardContainer .cardBox {
+  border: 3px solid #2E0063;
+  border-radius: 2.5rem;
+  margin: 0 auto;
+  width: 720px;
+  height: 400px;
+  box-shadow: 4px 4px 7px 1px rgba(49, 49, 49, 0.22);
+  -webkit-box-shadow: 4px 4px 7px 1px rgba(49, 49, 49, 0.22);
+  -moz-box-shadow: 4px 4px 7px 1px rgba(49, 49, 49, 0.22);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.cardNavidad .cardContainer .cardBox .imgBox {
+  margin-left: -20%;
+  margin-top: 2%;
+  max-width: 810px;
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+}
+
+.cardNavidad .cardContainer .cardBox .imgBox .fotoCard {
+  width: 50%;
+}
+
+.cardNavidad .cardContainer .cardBox .titleLanding {
+  max-width: -moz-fit-content;
+  max-width: -webkit-fit-content;
+  max-width: fit-content;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+
+.cardNavidad .cardContainer .cardBox .titleLanding h4 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3.3rem;
+  line-height: 0.9;
+  color: #2E0063;
+}
+
+.cardNavidad .cardContainer .cardBox .titleLanding h4 span {
+  margin-left: 10%;
+  font-size: 6.5rem;
+}
+
+@media (max-width: 576px) {
+  .cardNavidad .cardContainer .cardBox {
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+}
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#75298c), to(#2e0063));
+  background: linear-gradient(180deg, #75298c 0%, #2e0063 100%);
+  margin-top: 2rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 5;
+}
+
+footer p {
+  color: #ffffff;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+/*# sourceMappingURL=styles.css.map */
