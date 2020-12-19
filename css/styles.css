@@ -3,6 +3,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #d2ff5c), color-stop(60%, #82e778));
   background: linear-gradient(180deg, #d2ff5c 30%, #82e778 60%);
@@ -12,36 +17,17 @@ body {
   font-size: 1.3rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .logo {
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: relative;
   z-index: 10;
 }
 
-.logo .logoImg {
-  width: 25%;
-}
-
-@media (min-width: 1600px) {
+@media (max-width: 768px) {
   .logo .logoImg {
-    width: 15%;
-  }
-}
-
-@media (min-width: 1300px) {
-  .logo .logoImg {
-    width: 20%;
-  }
-}
-
-@media (min-width: 768px) {
-  .logo .logoImg {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -53,14 +39,14 @@ body {
 
 .cardNavidad .iconsScene {
   width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
+  position: fixed;
+  z-index: 25;
+  top: 5%;
   left: 10%;
 }
 
 .cardNavidad .cardContainer {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .cardNavidad .cardContainer .decoArboles {
@@ -85,6 +71,8 @@ body {
           transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  position: relative;
+  z-index: 20;
 }
 
 .cardNavidad .cardContainer .cardBox .imgBox {
@@ -130,7 +118,7 @@ body {
 
 @media (max-width: 1600px) {
   .cardNavidad .iconsScene {
-    left: -10%;
+    left: -3%;
   }
 }
 
@@ -153,17 +141,30 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .cardNavidad .iconsScene {
+    top: 8%;
+    right: 0;
+    left: -25%;
+    transform: scale(1.5) !important;
+    -webkit-transform: scale(1.5) !important;
+    -moz-transform: scale(1.5) !important;
+    -webkit-transform-origin: center left !important;
+            transform-origin: center left !important;
+  }
+}
+
 @media (max-width: 576px) {
   .cardNavidad {
     max-height: 380px;
   }
   .cardNavidad .iconsScene {
-    top: -3%;
+    top: 6%;
     right: 0;
-    left: -25%;
-    transform: scale(0.3) !important;
-    -webkit-transform: scale(0.3) !important;
-    -moz-transform: scale(0.3) !important;
+    left: -30%;
+    transform: scale(1.5) !important;
+    -webkit-transform: scale(1.5) !important;
+    -moz-transform: scale(1.5) !important;
     -webkit-transform-origin: center left !important;
             transform-origin: center left !important;
   }
@@ -204,7 +205,7 @@ body {
   opacity: 0.6;
   margin-left: -10%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 33%;
 }
 
@@ -241,8 +242,26 @@ body {
   font-size: 5rem;
 }
 
+@media (max-width: 768px) {
+  .textNavidad .scene {
+    top: 43%;
+    transform: scale(2.8) !important;
+    -webkit-transform: scale(2.8) !important;
+    -moz-transform: scale(2.8) !important;
+    -webkit-transform-origin: center left !important;
+            transform-origin: center left !important;
+  }
+}
+
 @media (max-width: 576px) {
-  .textNavidad .scene div {
+  .textNavidad .scene {
+    transform: scale(2.5) !important;
+    -webkit-transform: scale(2.5) !important;
+    -moz-transform: scale(2.5) !important;
+    -webkit-transform-origin: center left !important;
+            transform-origin: center left !important;
+  }
+  .textNavidad .scene div img {
     max-height: 100vh;
   }
   .textNavidad .parteUno p, .textNavidad .parteDos p, .textNavidad .parteTres p {

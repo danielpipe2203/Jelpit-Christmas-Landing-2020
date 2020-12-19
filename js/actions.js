@@ -26,7 +26,7 @@ var animation = bodymovin.loadAnimation({
 $(window).scroll(function () {
   animation.playSegments([0, 100], true);
 });
-//Parallax for decorations BG
+//Parallax for decorations BG https://github.com/wagerfield/parallax
 var scene = document.getElementById('scene');
 var sceneTwo = document.getElementById('sceneIcons');
 var parallaxInstance = new Parallax(scene);

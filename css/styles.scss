@@ -10,7 +10,10 @@ $gradienteMorado:linear-gradient(180deg, rgba(117,41,140,1) 0%, rgba(46,0,99,1) 
 html {
     scroll-behavior: smooth; //Scroll Smooth to section
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     // background: url(../images/BG_1.png) no-repeat center top;
     // background-size: cover;
@@ -20,33 +23,17 @@ body{
     color:$colorTexto;
     font-size: 1.3rem;
     transform-style: preserve-3d;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 // @media (max-width:768px){}
 .logo{
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: relative;
     z-index: 10;
-    .logoImg{
-        width: 25%;
-    }
-    @media (min-width:1600px){
+    @media (max-width:768px){
         .logoImg{
-            width: 15%;
+            width: 30%;
         }
-    }
-    @media (min-width:1300px){
-        .logoImg{
-            width: 20%;
-        }
-    }
-    @media (min-width:768px){
-        .logoImg{
-            width: 40%;
-        }
-    }
+    } 
     @media (max-width:576px){
         .logoImg{
             width: 50%;
@@ -56,13 +43,13 @@ body{
 .cardNavidad{
     .iconsScene{
         width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 0;
+        position: fixed;
+        z-index: 25;
+        top: 5%;
         left: 10%;
     }
     .cardContainer{
-        padding-top: 20%;
+        padding-top: 10%;
         .decoArboles{
             position: absolute;
             top: -10%;
@@ -81,6 +68,8 @@ body{
             transform: translateZ(0);
             transform-style: preserve-3d;
             backface-visibility: hidden;
+            position: relative;
+            z-index: 20;
             .imgBox{
                 margin-left: -20%;
                 margin-top: 2%;
@@ -118,7 +107,7 @@ body{
     }
     @media (max-width:1600px){
         .iconsScene{
-            left: -10%;
+            left: -3%;
         }
     }
     @media (max-width:768px){
@@ -141,15 +130,26 @@ body{
             }
         }
     }
+    @media (max-width:768px){
+        .iconsScene{
+            top: 8%;
+            right: 0;
+            left: -25%;
+            transform: scale(1.5) !important;
+            -webkit-transform: scale(1.5) !important;
+            -moz-transform: scale(1.5) !important;
+            transform-origin: center left !important;
+        }
+    }
     @media (max-width:576px){
         max-height: 380px;
         .iconsScene{
-            top:-3%;
+            top: 6%;
             right: 0;
-            left: -25%;
-            transform: scale(0.3) !important;
-            -webkit-transform: scale(0.3) !important;
-            -moz-transform: scale(0.3) !important;
+            left: -30%;
+            transform: scale(1.5) !important;
+            -webkit-transform: scale(1.5) !important;
+            -moz-transform: scale(1.5) !important;
             transform-origin: center left !important;
         }
         .cardContainer{
@@ -184,7 +184,7 @@ body{
         opacity: 0.6;
         margin-left: -10%;
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 33%;
     }
     .parteUno,.parteDos,.parteTres{
@@ -214,10 +214,25 @@ body{
             }
         }
     }
+    @media (max-width:768px){
+        .scene{
+            top: 43%;
+            transform: scale(2.8) !important;
+            -webkit-transform: scale(2.8) !important;
+            -moz-transform: scale(2.8) !important;
+            transform-origin: center left !important;
+        }
+    }
     @media (max-width:576px){
         .scene{
+            transform: scale(2.5) !important;
+            -webkit-transform: scale(2.5) !important;
+            -moz-transform: scale(2.5) !important;
+            transform-origin: center left !important;
             div{
-                max-height: 100vh;
+                img{
+                    max-height: 100vh;
+                }
             }
         }
         .parteUno,.parteDos,.parteTres{
