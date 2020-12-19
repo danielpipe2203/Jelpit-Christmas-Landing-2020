@@ -39,7 +39,7 @@ body {
 
 .cardNavidad .iconsScene {
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 25;
   top: 5%;
   left: 10%;
@@ -205,7 +205,7 @@ body {
   opacity: 0.6;
   margin-left: -10%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 33%;
 }
 
