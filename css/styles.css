@@ -12,7 +12,7 @@ body {
   font-size: 1.3rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  height: 200vh;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -33,9 +33,15 @@ body {
   }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1300px) {
   .logo .logoImg {
     width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo .logoImg {
+    width: 40%;
   }
 }
 
@@ -43,6 +49,14 @@ body {
   .logo .logoImg {
     width: 50%;
   }
+}
+
+.cardNavidad .iconsScene {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -10%;
 }
 
 .cardNavidad .cardContainer {
@@ -90,10 +104,15 @@ body {
   max-width: -webkit-fit-content;
   max-width: fit-content;
   position: absolute;
-  top: 30%;
+  top: 19%;
   right: 5%;
   -webkit-transform: translateZ(50px);
           transform: translateZ(50px);
+}
+
+.cardNavidad .cardContainer .cardBox .titleLanding .iconTree {
+  margin-left: 25%;
+  width: 20%;
 }
 
 .cardNavidad .cardContainer .cardBox .titleLanding h4 {
@@ -110,6 +129,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .cardNavidad .iconsScene {
+    left: -100%;
+  }
+  .cardNavidad .iconsScene div {
+    max-height: 100vh;
+  }
   .cardNavidad .cardContainer .decoArboles {
     width: 35%;
   }
@@ -126,6 +151,16 @@ body {
   .cardNavidad {
     max-height: 380px;
   }
+  .cardNavidad .iconsScene {
+    top: -3%;
+    right: 0;
+    left: -25%;
+    transform: scale(0.3) !important;
+    -webkit-transform: scale(0.3) !important;
+    -moz-transform: scale(0.3) !important;
+    -webkit-transform-origin: center left !important;
+            transform-origin: center left !important;
+  }
   .cardNavidad .cardContainer .decoArboles {
     width: 45%;
   }
@@ -135,6 +170,9 @@ body {
     -moz-transform: scale(0.4);
     -webkit-transform-origin: center left;
             transform-origin: center left;
+  }
+  .cardNavidad .cardContainer .cardBox div {
+    max-height: 100vh;
   }
 }
 
@@ -148,6 +186,121 @@ body {
 @media (max-width: 576px) {
   .animContainer {
     padding-top: 1rem;
+  }
+}
+
+.textNavidad {
+  margin-top: 20%;
+}
+
+.textNavidad .scene {
+  z-index: 1;
+  opacity: 0.6;
+  margin-left: -10%;
+  width: 100%;
+  position: absolute;
+  top: 33%;
+}
+
+.textNavidad .parteUno, .textNavidad .parteDos, .textNavidad .parteTres {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 15%;
+}
+
+.textNavidad .parteUno p, .textNavidad .parteDos p, .textNavidad .parteTres p {
+  font-size: 2.3rem;
+  color: #2E0063;
+}
+
+.textNavidad .parteDos {
+  text-align: right;
+}
+
+.textNavidad .gracias {
+  position: relative;
+  z-index: 5;
+}
+
+.textNavidad .gracias p {
+  font-size: 2.7rem;
+  color: #2E0063;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.textNavidad .gracias p span {
+  font-size: 5rem;
+}
+
+@media (max-width: 576px) {
+  .textNavidad .scene div {
+    max-height: 100vh;
+  }
+  .textNavidad .parteUno p, .textNavidad .parteDos p, .textNavidad .parteTres p {
+    font-size: 1.8rem;
+  }
+  .textNavidad .gracias p {
+    font-size: 2.4rem;
+  }
+  .textNavidad .gracias p span {
+    font-size: 4rem;
+  }
+}
+
+.merryXmas {
+  padding-top: 5rem;
+}
+
+.merryXmas .XmasContainer {
+  text-align: center;
+}
+
+.merryXmas .XmasContainer h1 {
+  color: #2E0063;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 6rem;
+}
+
+.merryXmas .XmasContainer .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.merryXmas .XmasContainer .message i {
+  color: #2E0063;
+  display: inline-block;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.merryXmas .XmasContainer .message p {
+  display: inline-block;
+  color: #2E0063;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .merryXmas .XmasContainer h1 {
+    font-size: 4rem;
+  }
+  .merryXmas .XmasContainer .message i {
+    font-size: 2.7rem;
+  }
+  .merryXmas .XmasContainer .message p {
+    font-size: 1.3rem;
   }
 }
 

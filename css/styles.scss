@@ -10,6 +10,7 @@ $gradienteMorado:linear-gradient(180deg, rgba(117,41,140,1) 0%, rgba(46,0,99,1) 
 html {
     scroll-behavior: smooth; //Scroll Smooth to section
 }
+
 body{
     // background: url(../images/BG_1.png) no-repeat center top;
     // background-size: cover;
@@ -19,7 +20,7 @@ body{
     color:$colorTexto;
     font-size: 1.3rem;
     transform-style: preserve-3d;
-    height: 200vh; //testing height
+    overflow-x: hidden;
 }
 // @media (max-width:768px){}
 .logo{
@@ -36,9 +37,14 @@ body{
             width: 15%;
         }
     }
-    @media (max-width:1300px){
+    @media (min-width:1300px){
         .logoImg{
             width: 20%;
+        }
+    }
+    @media (min-width:768px){
+        .logoImg{
+            width: 40%;
         }
     }
     @media (max-width:576px){
@@ -48,6 +54,13 @@ body{
     }    
 }
 .cardNavidad{
+    .iconsScene{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: -10%;
+    }
     .cardContainer{
         padding-top: 20%;
         .decoArboles{
@@ -82,9 +95,13 @@ body{
                 max-width: -webkit-fit-content;
                 max-width: fit-content;
                 position: absolute;
-                top: 30%;
+                top: 19%;
                 right: 5%;
                 transform: translateZ(50px);
+                .iconTree{
+                    margin-left: 25%;
+                    width: 20%;
+                }
                 h4{
                     font-weight: bold;
                     font-style: italic;
@@ -100,6 +117,13 @@ body{
         }
     }
     @media (max-width:768px){
+        .iconsScene{
+            left: -100%;
+            div{
+                max-height: 100vh;
+            }
+
+        }
         .cardContainer{
             .decoArboles{
                 width: 35%;
@@ -114,6 +138,15 @@ body{
     }
     @media (max-width:576px){
         max-height: 380px;
+        .iconsScene{
+            top:-3%;
+            right: 0;
+            left: -25%;
+            transform: scale(0.3) !important;
+            -webkit-transform: scale(0.3) !important;
+            -moz-transform: scale(0.3) !important;
+            transform-origin: center left !important;
+        }
         .cardContainer{
             .decoArboles{
                 width: 45%;
@@ -123,6 +156,9 @@ body{
                 -webkit-transform: scale(0.4);
                 -moz-transform: scale(0.4);
                 transform-origin: center left;
+                div{
+                    max-height: 100vh;
+                }
             }
         }
     }
@@ -134,6 +170,109 @@ body{
     padding-top: 3rem;    
     @media (max-width:576px){
         padding-top: 1rem;
+    }
+}
+.textNavidad{
+    margin-top: 20%;
+    .scene{
+        z-index: 1;
+        opacity: 0.6;
+        margin-left: -10%;
+        width: 100%;
+        position: absolute;
+        top: 33%;
+    }
+    .parteUno,.parteDos,.parteTres{
+        position: relative;
+        z-index: 5;
+        padding-bottom: 15%;
+        p{
+            font-size: 2.3rem;
+            color: $morado;
+        }
+    }
+    .parteDos{
+        text-align: right;
+    }
+    .gracias{
+        position: relative;
+        z-index: 5;
+        p{
+            font-size: 2.7rem;
+            color: $morado;
+            text-align: center;
+            line-height: 1.2;
+            font-weight: bold;
+            font-style: italic;
+            span{
+                font-size: 5rem;
+            }
+        }
+    }
+    @media (max-width:576px){
+        .scene{
+            div{
+                max-height: 100vh;
+            }
+        }
+        .parteUno,.parteDos,.parteTres{
+            p{
+                font-size: 1.8rem;
+            }
+        }
+        .gracias{
+            p{
+                font-size: 2.4rem;
+                span{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+.merryXmas{
+    padding-top: 5rem;
+    .XmasContainer{
+        text-align: center;
+        h1{
+            color: $morado;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 6rem;
+        }
+        .message{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                color: $morado;
+                display: inline-block;
+                font-size: 5rem;
+                padding: 1rem;
+            }
+            p{
+                display: inline-block;
+                color: $morado;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    @media (max-width:576px){
+        .XmasContainer{
+            h1{
+                font-size: 4rem;
+            }
+            .message{
+                i{
+                    font-size: 2.7rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 }
 footer{

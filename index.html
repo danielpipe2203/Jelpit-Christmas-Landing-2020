@@ -13,6 +13,8 @@
         <!-- CSS -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -26,6 +28,21 @@
         </section>
         <!--Card Navidad Section-->
         <section class="container-fluid cardNavidad">
+            <!--Bolas fondo-->
+            <div id="sceneIcons" class="iconsScene">
+                <div data-depth="0.65">
+                    <img src="images/regalos.png">
+                </div>
+                <div data-depth="0.30">
+                    <img src="images/estrellas.png">
+                </div>
+                <div data-depth="0.40">
+                    <img src="images/campanas.png">
+                </div>
+                <div data-depth="0.80">
+                    <img src="images/bolaNavidad.png">
+                </div>
+            </div>
             <div class="container">
                 <div class="row justify-content-center cardContainer" style="margin: 0 auto;">
                     <div class="decoArboles" id="Arbolesdeco">
@@ -37,6 +54,7 @@
                                 <img src="images/foto_JP.png" alt="Feliz Navidad y Año nuevo 2021" class="img-fluid fotoCard">
                             </div>
                             <div class="titleLanding">
+                                <img src="images/christmas-tree.svg" alt="" class="img-fluid iconTree">
                                 <h4>
                                     <span>2020</span> <br> 
                                     sí que tuvo magia
@@ -55,11 +73,87 @@
         </div>
         <!--Message Animation Section-->
         <section class="container-fluid textNavidad">
+            <!--Bolas fondo-->
+            <div id="scene" class="scene">
+                <div data-depth="1.00">
+                    <img src="images/bola_1.png">
+                </div>
+                <div data-depth="0.65">
+                    <img src="images/bola_2.png">
+                </div>
+                <div data-depth="0.30">
+                    <img src="images/bola_3.png">
+                </div>
+                <div data-depth="0.40">
+                    <img src="images/bola_4.png">
+                </div>
+                <div data-depth="0.80">
+                    <img src="images/bola_5.png">
+                </div>
+                <div data-depth="0.70">
+                    <img src="images/bola_6.png">
+                </div>
+                <div data-depth="0.75">
+                    <img src="images/cinta_1.png">
+                </div>
+                <div data-depth="0.50">
+                    <img src="images/cinta_2.png">
+                </div>
+                <div data-depth="0.45">
+                    <img src="images/cinta_3.png">
+                </div>
+            </div>
             <div class="container">
-                <div class="row justify-content-center" style="margin: 0 auto;">
-                    <!--textos animados-->
-                    https://csspoint101.com/parallax-on-hover-effect-using-parallax-js/
-                    https://lottiefiles.com/preview/animations
+                <!--textos animados-->
+                <div class="row justify-content-start parteUno" style="margin: 0 auto;">
+                    <div class="col-12 col-md-10 col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                        <p>
+                            Porque después de un año en casa,
+                            descubrimos que el valor de la vida está
+                            en las cosas pequeñas,
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-end parteDos" style="margin: 0 auto;">
+                    <div class="col-12 col-md-10 col-lg-8" data-aos="fade-left" data-aos-duration="1000">
+                        <p>
+                            que una sonrisa vale más que 
+                            mil palabras y que la confianza
+                            rompe barreras
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-start parteTres" style="margin: 0 auto;">
+                    <div class="col-12 col-md-10 col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                        <p>
+                            y logra traspasarlas para disfrutar 
+                            de cada instante con los que más amas.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center gracias" style="margin: 0 auto;">
+                    <div class="col-12 col-md-10 col-lg-8" data-aos="zoom-out-up">
+                        <p>
+                            Por esto y mil razones más <br>
+                            <span>¡Gracias!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Feliz navidad mensaje-->
+        <section class="container merryXmas" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row justify-content-center" style="margin: 0 auto;">
+                <div class="col-12 col-md-10 XmasContainer">
+                    <img src="images/gifts.png" alt="Feliz Navidad y Año Nuevo" class="img-fluid">
+                    <h1>Feliz Navidad</h1>
+                    <div class="message">
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                        <p>
+                            y un 2021 lleno de la magia <br> que solo sabes tú.
+                        </p>
+                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -78,6 +172,8 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.2/lottie.min.js" integrity="sha512-uWE7TOtPM94tOaRORAriQAFAWvOl3ZaImqc9ubBQ6r7vcLYvZOOQpzwgfLtrmV6dohAn1FhLIJYfKgL1/s0XKQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/actions.js"></script>
     </body>
 </html>
