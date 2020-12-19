@@ -59,7 +59,7 @@ body{
         position: absolute;
         z-index: 1;
         top: 0;
-        left: -10%;
+        left: 10%;
     }
     .cardContainer{
         padding-top: 20%;
@@ -114,6 +114,11 @@ body{
                     }
                 }
             }
+        }
+    }
+    @media (max-width:1600px){
+        .iconsScene{
+            left: -10%;
         }
     }
     @media (max-width:768px){
