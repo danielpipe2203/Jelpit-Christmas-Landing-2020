@@ -45,8 +45,9 @@ body{
         width: 100%;
         position: absolute;
         z-index: 25;
-        top: 5%;
+        //top: 25%; //5%
         left: 10%;
+        margin-top: 1%;
     }
     .cardContainer{
         padding-top: 10%;
@@ -185,7 +186,7 @@ body{
         margin-left: -10%;
         width: 100%;
         position: absolute;
-        top: 33%;
+        margin-top: 10%;
     }
     .parteUno,.parteDos,.parteTres{
         position: relative;

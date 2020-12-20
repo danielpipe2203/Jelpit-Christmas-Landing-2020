@@ -41,8 +41,8 @@ body {
   width: 100%;
   position: absolute;
   z-index: 25;
-  top: 5%;
   left: 10%;
+  margin-top: 1%;
 }
 
 .cardNavidad .cardContainer {
@@ -206,7 +206,7 @@ body {
   margin-left: -10%;
   width: 100%;
   position: absolute;
-  top: 33%;
+  margin-top: 10%;
 }
 
 .textNavidad .parteUno, .textNavidad .parteDos, .textNavidad .parteTres {
