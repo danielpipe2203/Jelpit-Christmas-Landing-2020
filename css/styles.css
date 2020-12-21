@@ -118,16 +118,13 @@ body {
 
 @media (max-width: 1600px) {
   .cardNavidad .iconsScene {
-    left: -3%;
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
   .cardNavidad .iconsScene {
-    left: -100%;
-  }
-  .cardNavidad .iconsScene div {
-    max-height: 100vh;
+    display: none;
   }
   .cardNavidad .cardContainer .decoArboles {
     width: 35%;
@@ -136,21 +133,8 @@ body {
     transform: scale(0.8);
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
-    -webkit-transform-origin: center left;
-            transform-origin: center left;
-  }
-}
-
-@media (max-width: 768px) {
-  .cardNavidad .iconsScene {
-    top: 8%;
-    right: 0;
-    left: -25%;
-    transform: scale(1.5) !important;
-    -webkit-transform: scale(1.5) !important;
-    -moz-transform: scale(1.5) !important;
-    -webkit-transform-origin: center left !important;
-            transform-origin: center left !important;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
   }
 }
 
@@ -243,13 +227,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .textNavidad {
+    background: url(../images/BG_mobile.png) no-repeat left top;
+    background-size: cover;
+  }
   .textNavidad .scene {
-    top: 43%;
-    transform: scale(2.8) !important;
-    -webkit-transform: scale(2.8) !important;
-    -moz-transform: scale(2.8) !important;
-    -webkit-transform-origin: center left !important;
-            transform-origin: center left !important;
+    display: none;
   }
 }
 

@@ -108,17 +108,20 @@ body{
     }
     @media (max-width:1600px){
         .iconsScene{
-            left: -3%;
+            display: none;
         }
     }
-    @media (max-width:768px){
+    @media (max-width:768px){  
         .iconsScene{
-            left: -100%;
-            div{
-                max-height: 100vh;
-            }
-
-        }
+            // top: 8%;
+            // right: 0;
+            // left: -25%;
+            // transform: scale(1.5) !important;
+            // -webkit-transform: scale(1.5) !important;
+            // -moz-transform: scale(1.5) !important;
+            // transform-origin: center left !important;
+            display: none;
+        }      
         .cardContainer{
             .decoArboles{
                 width: 35%;
@@ -127,19 +130,8 @@ body{
                 transform: scale(0.8);
                 -webkit-transform: scale(0.8);
                 -moz-transform: scale(0.8);
-                transform-origin: center left;
+                transform-origin: center center;
             }
-        }
-    }
-    @media (max-width:768px){
-        .iconsScene{
-            top: 8%;
-            right: 0;
-            left: -25%;
-            transform: scale(1.5) !important;
-            -webkit-transform: scale(1.5) !important;
-            -moz-transform: scale(1.5) !important;
-            transform-origin: center left !important;
         }
     }
     @media (max-width:576px){
@@ -216,12 +208,15 @@ body{
         }
     }
     @media (max-width:768px){
+        background: url(../images/BG_mobile.png) no-repeat left top;
+        background-size: cover;
         .scene{
-            top: 43%;
-            transform: scale(2.8) !important;
-            -webkit-transform: scale(2.8) !important;
-            -moz-transform: scale(2.8) !important;
-            transform-origin: center left !important;
+            // top: 43%;
+            // transform: scale(2.8) !important;
+            // -webkit-transform: scale(2.8) !important;
+            // -moz-transform: scale(2.8) !important;
+            // transform-origin: center left !important;
+            display: none;
         }
     }
     @media (max-width:576px){
