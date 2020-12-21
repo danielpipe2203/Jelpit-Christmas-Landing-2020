@@ -116,12 +116,6 @@ body {
   font-size: 6.5rem;
 }
 
-@media (max-width: 1600px) {
-  .cardNavidad .iconsScene {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .cardNavidad .iconsScene {
     display: none;
